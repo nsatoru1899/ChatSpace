@@ -1,4 +1,43 @@
 .chat-main
   .chat-main__group-info
+    .group-info
+      .group-info__name
+        test
+      .group-info__member
+        Member : Satoru
+    .group-edit
+      =link_to "#", class: "group-info-edit" do
+        Edit
   .chat-main__message-list
+    .message-info
+      .message-info__name
+        Satoru
+      .message-info__date
+        2019/12/13(Fri) 12:55
+    .message-content
+      おはよう！
+    .message-info
+      .message-info__name
+        Satoru
+      .message-info__date
+        2019/12/13(Fri) 12:55
+    .message-content
+      おはよう！
+    .message-info
+      .message-info__name
+        Satoru
+      .message-info__date
+        2019/12/13(Fri) 12:55
+    .message-content
+      おはよう！
   .chat-main__message-form
+    .message-form
+      %input{type: "text", class: "form-text" ,placeholder: "type a message"}
+      %label{class: "form-image"}
+        = icon('fas', 'image')
+        %input{type: "file", class: "file-btn"}
+    .message-send
+      %label{class: "form-send"}
+        %p
+          Send
+        %input{type: "submit", class: "send-btn", value:"Send"}
